@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto final JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Blog Ruben Roque</h1>
+
+    <div id="postDetails">
+      <label for="postTitle">Título:</label>
+      <input type="text" id="postTitle" />
+      <br />
+      <label for="postContent">Conteúdo:</label>
+      <textarea id="postContent"></textarea>
+      <button id="botaocriar" onclick="criarPost()">Criar Post</button>
+    </div>
+
+    <div class="posts-container">
+      <h2>Posts Antigos</h2>
+      <div id="searchSection">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Pesquisar por título"
+          onclick="searchPosts()"
+        />
+        <button onclick="searchPosts()">Pesquisar</button>
+        <div id="postCount"></div>
+      </div>
+      <ul id="postList"></ul>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
